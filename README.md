@@ -6,11 +6,11 @@
     `wget --no-check-certificate https://www.moerats.com/usr/down/debian-transmission.sh
 sh debian-transmission.sh`
 >设置Debian源:  
->echo "deb http://ftp.debian.org/debian/ sid main" >> /etc/apt/sources.list
->echo "deb http://ftp.debian.org/debian/ experimental main" >> /etc/apt/sources.list
->更新源和安装Transmission：
+>echo "deb http://ftp.debian.org/debian/ sid main" >> /etc/apt/sources.list  
+>echo "deb http://ftp.debian.org/debian/ experimental main" >> /etc/apt/sources.list  
+>更新源和安装Transmission：  
 
->apt-get update
->apt-get -t experimental install transmission-daemon -y
->echo "APT::Default-Release \"stable\";" >> /etc/apt/apt.conf.d/71distro
->上面最后第三行的意思是，让你在用APT安装其他软件包的时候，使用的是稳定版，而不是最新版。
+>apt-get update  
+>apt-get -t experimental install transmission-daemon -y  
+>echo "APT::Default-Release \"stable\";" >> /etc/apt/apt.conf.d/71distro  
+>上面最后第三行的意思是，让你在用APT安装其他软件包的时候，使用的是稳定版，而不是最新版。  
