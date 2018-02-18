@@ -19,3 +19,9 @@ sh debian-transmission.sh`
 
 
 **由于脚本里有`echo "APT::Default-Release \"stable\";" >> /etc/apt/apt.conf.d/71distro  `所以在debian 8 使用此脚本后运行 apt update会更新不了 需要再运行一次`echo "APT::Default-Release \"jessie\";" >> /etc/apt/apt.conf.d/71distro  `**
+>停止和启动Transmission：  
+
+有些时候咱们不希望运行，或者，需要修改配置文件，则需要停止Transmission先，修改之后再启动。  
+
+停止：/etc/init.d/transmission-daemon stop  
+启动：/etc/init.d/transmission-daemon start  
