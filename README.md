@@ -23,5 +23,22 @@ sh debian-transmission.sh`
 
 有些时候咱们不希望运行，或者，需要修改配置文件，则需要停止Transmission先，修改之后再启动。  
 
-停止：/etc/init.d/transmission-daemon stop  
-启动：/etc/init.d/transmission-daemon start  
+停止：`/etc/init.d/transmission-daemon stop`  
+启动：`/etc/init.d/transmission-daemon start `   
+>Transmission配置文件：  
+一个名为settings.json咱们非常熟悉的Transmission配置文件，路径为：  
+
+`/var/lib/transmission-daemon/info/settings.json`  
+修改其中的各个选项，例如dht-enabled，download-dir，rpc-password，rpc-port，rpc-whitelist-enabled等等。之后再启动Transmission。  
+
+如果你觉得修改配置文件特别的麻烦，你特别的不爽。这里有个配置文件，如下操作：  
+
+`/etc/init.d/transmission-daemon stop`
+`wget http://dadi.me/wp-content/uploads/dir/Transmission/settings.json`  
+`mv -f settings.json /var/lib/transmission-daemon/info/`  
+`/etc/init.d/transmission-daemon start`    
+>唔，这样就可以了，再来写一下默认的用户名及端口等。  
+
+端口为2012，可以通过ip地址，加上2012访问Web管理页面：ip:2012；  
+默认的用户名及密码为：dadi.me。  
+默认的文件下载目录为：/home/transmission/Downloads/  
