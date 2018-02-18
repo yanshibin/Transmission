@@ -4,7 +4,9 @@
     安装Transmission  
     测试系统为Debian 8 X64，运行命令：  
     `wget --no-check-certificate https://www.moerats.com/usr/down/debian-transmission.sh
-sh debian-transmission.sh`
+sh debian-transmission.sh`  
+![Alt text](https://github.com/yanshibin/Transmission/blob/master/Transmission(1).png "Optional title")
+
 >设置Debian源:  
 >echo "deb http://ftp.debian.org/debian/ sid main" >> /etc/apt/sources.list  
 >echo "deb http://ftp.debian.org/debian/ experimental main" >> /etc/apt/sources.list  
