@@ -44,3 +44,11 @@ sh debian-transmission.sh`
 端口为2012，可以通过ip地址，加上2012访问Web管理页面：ip:2012；  
 默认的用户名及密码为：dadi.me。  
 默认的文件下载目录为：/home/transmission/Downloads/  
+创建文件目录，赋予权限：
+
+>上面提到下载目录，所以要建立这个目录，如果你修改成其他目录的话，则替换：  
+
+
+`mkdir -p /home/transmission/Downloads/`  
+`chmod -R 777 /home/transmission/Downloads/`  
+这样就可以了。  
